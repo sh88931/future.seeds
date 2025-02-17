@@ -5,6 +5,5 @@ function showSection(sectionId) {
 
     document.getElementById(sectionId).classList.remove('hidden');
 
-    // تشغيل صوت تقليب الصفحة
     document.getElementById('pageSound').play();
 }

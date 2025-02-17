@@ -5,54 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بذور المستقبل - Future Seeds</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <audio id="pageSound" src="page-turn.mp3"></audio>
 
     <header>
-        <h1>بذور المستقبل - Future Seeds</h1>
+        <h1>🌱 بذور المستقبل - Future Seeds</h1>
         <nav>
             <ul>
-                <li><a href="#" onclick="showSection('books')">📚 الكتب</a></li>
-                <li><a href="#" onclick="showSection('videos')">🎥 الفيديوهات</a></li>
-                <li><a href="#" onclick="showSection('games')">🎮 الألعاب</a></li>
+                <li><a href="#" onclick="showSection('home')"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#" onclick="showSection('books')"><i class="fas fa-book"></i> الكتب</a></li>
+                <li><a href="#" onclick="showSection('videos')"><i class="fas fa-video"></i> الفيديوهات</a></li>
+                <li><a href="#" onclick="showSection('games')"><i class="fas fa-gamepad"></i> الألعاب</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <h2>مرحبًا بك في تطبيق بذور المستقبل</h2>
+            <h2>مرحبًا بك في تطبيق بذور المستقبل 🎓</h2>
             <p>تعلم واستمتع مع محتوى تعليمي مميز للأمهات والمعلمات والطلاب.</p>
         </section>
 
         <section id="books" class="hidden">
             <button class="back-btn" onclick="showSection('home')">🔙 العودة</button>
             <h2>📚 الكتب التعليمية</h2>
-            <ul>
-                <li><a href="https://drive.google.com/file/d/1WCysX6ksVW2FhhdX4xZGYKarTwVyBcyN/view?usp=drivesdk" target="_blank">كتاب 1</a></li>
-                <li><a href="https://drive.google.com/file/d/1W5GmIUxi3as-1KqpK9WDnJCKTk91Z95T/view?usp=drivesdk" target="_blank">كتاب 2</a></li>
-                <li><a href="https://drive.google.com/file/d/1W6dtpuG7XYeuwAc4hVGZze2V6AW3gmLA/view?usp=drivesdk" target="_blank">كتاب 3</a></li>
+            <ul class="content-list">
+                <li><a href="https://drive.google.com/file/d/1WCysX6ksVW2FhhdX4xZGYKarTwVyBcyN/view?usp=drivesdk" target="_blank">📖 كتاب 1</a></li>
+                <li><a href="https://drive.google.com/file/d/1W5GmIUxi3as-1KqpK9WDnJCKTk91Z95T/view?usp=drivesdk" target="_blank">📖 كتاب 2</a></li>
+                <li><a href="https://drive.google.com/file/d/1W6dtpuG7XYeuwAc4hVGZze2V6AW3gmLA/view?usp=drivesdk" target="_blank">📖 كتاب 3</a></li>
             </ul>
         </section>
 
         <section id="videos" class="hidden">
             <button class="back-btn" onclick="showSection('home')">🔙 العودة</button>
             <h2>🎥 الفيديوهات التعليمية</h2>
-            <ul>
-                <li><a href="https://drive.google.com/file/d/1TCstOJ6dqxej9_QQzZwP5uRnjCj8bAyp/view?usp=drivesdk" target="_blank">فيديو 1</a></li>
-                <li><a href="https://drive.google.com/file/d/1T0lQSkBzThJjxjojmua30-wXYOv6kxJz/view?usp=drivesdk" target="_blank">فيديو 2</a></li>
-                <li><a href="https://drive.google.com/file/d/1T6LN9WhZUvZKx8RLxXVBMGsPzm5gDrgY/view?usp=drivesdk" target="_blank">فيديو 3</a></li>
+            <ul class="content-list">
+                <li><a href="https://drive.google.com/file/d/1TCstOJ6dqxej9_QQzZwP5uRnjCj8bAyp/view?usp=drivesdk" target="_blank">▶ فيديو 1</a></li>
+                <li><a href="https://drive.google.com/file/d/1T0lQSkBzThJjxjojmua30-wXYOv6kxJz/view?usp=drivesdk" target="_blank">▶ فيديو 2</a></li>
+                <li><a href="https://drive.google.com/file/d/1T6LN9WhZUvZKx8RLxXVBMGsPzm5gDrgY/view?usp=drivesdk" target="_blank">▶ فيديو 3</a></li>
             </ul>
         </section>
 
         <section id="games" class="hidden">
             <button class="back-btn" onclick="showSection('home')">🔙 العودة</button>
             <h2>🎮 الألعاب التعليمية</h2>
-            <ul>
-                <li><a href="https://docs.google.com/presentation/d/1V6MWBmqFuLQvahFJ0FT_QBq3fqKUBi-M/edit?usp=drivesdk" target="_blank">لعبة 1</a></li>
-                <li><a href="https://docs.google.com/presentation/d/1V7cciBQgU0uTrp6ytc43igTPVqMZF2he/edit?usp=drivesdk" target="_blank">لعبة 2</a></li>
+            <ul class="content-list">
+                <li><a href="https://docs.google.com/presentation/d/1V6MWBmqFuLQvahFJ0FT_QBq3fqKUBi-M/edit?usp=drivesdk" target="_blank">🎲 لعبة 1</a></li>
+                <li><a href="https://docs.google.com/presentation/d/1V7cciBQgU0uTrp6ytc43igTPVqMZF2he/edit?usp=drivesdk" target="_blank">🎲 لعبة 2</a></li>
             </ul>
         </section>
     </main>
