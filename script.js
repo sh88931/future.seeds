@@ -1,12 +1,10 @@
 function showSection(sectionId) {
-    let sections = document.querySelectorAll("section");
-    sections.forEach(section => {
-        section.classList.remove("active");
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('hidden');
     });
 
-    let activeSection = document.getElementById(sectionId);
-    activeSection.classList.add("active");
+    document.getElementById(sectionId).classList.remove('hidden');
 
-    let audio = document.getElementById("pageTurn");
-    audio.play();
+    // تشغيل صوت تقليب الصفحة
+    document.getElementById('pageSound').play();
 }
